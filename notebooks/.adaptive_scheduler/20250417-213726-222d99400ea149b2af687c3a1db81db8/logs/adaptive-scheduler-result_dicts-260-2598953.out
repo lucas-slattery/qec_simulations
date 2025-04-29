@@ -1,6 +1,0 @@
-/home/lucas.slattery/clean_repo/system_performance/qcircuitsim/ionq/qcircuitsim/backends/quimb/quimb_mps_results.py:386: ComplexWarning: Casting complex values to real discards the imaginary part
-  [max(0, float(d_sv / norm)) for d_sv, norm in zip(discarded_sv_norms, norms, strict=False)]
-/home/lucas.slattery/clean_repo/qec_simulations/qec/benchmark_performance.py:92: ComplexWarning: Casting complex values to real discards the imaginary part
-  this_result["estimated_fidelity"] = float(result.final_state.estimation_stats()["estimated_fidelity"])
-An error occurred while calling the function `mps_simulate` with the arguments `args=()` and `kwargs={'bb_code_parameter': (18, 4), 'constraints': <codes_constructions.circuit_models.SeqOperationConstraints object at 0x7533a2b3f980>, 'lazy_indexing': False, 'chi': 32, 'num_repetitions': 1}`.
-slurmstepd-obsidian-3: error: *** JOB 2598953 ON obsidian-3 CANCELLED AT 2025-04-17T21:40:17 ***

@@ -1,5 +1,0 @@
-/home/lucas.slattery/clean_repo/system_performance/qcircuitsim/ionq/qcircuitsim/backends/quimb/quimb_mps_results.py:386: ComplexWarning: Casting complex values to real discards the imaginary part
-  [max(0, float(d_sv / norm)) for d_sv, norm in zip(discarded_sv_norms, norms, strict=False)]
-/home/lucas.slattery/clean_repo/qec_simulations/qec/benchmark_performance.py:86: ComplexWarning: Casting complex values to real discards the imaginary part
-  this_result["estimated_fidelity"] = float(result.final_state.estimation_stats()["estimated_fidelity"])
-slurmstepd-obsidian-5: error: *** JOB 2594623 ON obsidian-5 CANCELLED AT 2025-04-17T18:58:30 ***

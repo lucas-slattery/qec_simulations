@@ -1,5 +1,0 @@
-/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/decomp.py:347: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
-  warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
-/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/decomp.py:347: UserWarning: Got: Array must not contain infs or NaNs., falling back to scipy gesvd driver.
-  warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
-Simulation failed
