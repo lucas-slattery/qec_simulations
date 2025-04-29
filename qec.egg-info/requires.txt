@@ -1,0 +1,7 @@
+cirq
+numpy
+stimcirq
+adaptive-scheduler
+pipefunc
+sinter
+stim

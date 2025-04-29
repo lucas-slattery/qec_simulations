@@ -1,0 +1,131 @@
+An error occurred while calling the function `mps_simulate` with the arguments `args=()` and `kwargs={'use_gpu': False, 'bb_code_parameter': (30, 8), 'constraints': <codes_constructions.circuit_models.SeqOperationConstraints object at 0x7f545f1e6ea0>, 'lazy_indexing': False, 'chi': 2, 'num_repetitions': 1}`.
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/concurrent/futures/process.py", line 264, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/utils.py", line 1167, in __call__
+    return deserialized_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive/learner/sequence_learner.py", line 53, in __call__
+    return self.function(point, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/_executor.py", line 225, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 817, in _process_chunk
+    return list(map(process_index, chunk))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 567, in _run_iteration_and_process
+    output = _run_iteration(func, selected, cache)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 534, in _run_iteration
+    return _get_or_set_cache(func, selected, cache, compute_fn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 507, in _get_or_set_cache
+    return compute_fn()
+           ^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 530, in compute_fn
+    handle_error(e, func, selected)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 528, in compute_fn
+    return func(**selected)
+           ^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/_pipefunc.py", line 700, in __call__
+    result = self.func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/clean_repo/qec_simulations/qec/benchmark_performance.py", line 80, in mps_simulate
+    options = CirqSimulatorOptions(QCircuitSimulatorOptions(mps_max_bond_dimension = chi, mps_track_discarded_sv_norms=True, mps_lazy_indexing=lazy_indexing, use_gpu=use_gpu))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for QCircuitSimulatorOptions
+use_gpu
+  Extra inputs are not permitted [type=extra_forbidden, input_value=False, input_type=bool]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+Error occurred while executing function `mps_simulate(bb_code_parameter=(30, 8), constraints=<codes_constructions.circuit_models.SeqOperationConstraints object at 0x7f545f1e6ea0>, lazy_indexing=False, chi=2, num_repetitions=1, use_gpu=False)`.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive/runner.py", line 294, in _process_futures
+    y = fut.result()
+        ^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for QCircuitSimulatorOptions
+use_gpu
+  Extra inputs are not permitted [type=extra_forbidden, input_value=False, input_type=bool]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+Error occurred while executing function `mps_simulate(bb_code_parameter=(30, 8), constraints=<codes_constructions.circuit_models.SeqOperationConstraints object at 0x7f545f1e6ea0>, lazy_indexing=False, chi=2, num_repetitions=1, use_gpu=False)`.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/_server_support/launcher.py", line 185, in <module>
+    main()
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/_server_support/launcher.py", line 169, in main
+    runner.ioloop.run_until_complete(runner.task)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+RuntimeError: An error occured while evaluating "learner.function((0, ((73,),)))". See the traceback for details.:
+
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/concurrent/futures/process.py", line 264, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/utils.py", line 1167, in __call__
+    return deserialized_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive/learner/sequence_learner.py", line 53, in __call__
+    return self.function(point, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/_executor.py", line 225, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 817, in _process_chunk
+    return list(map(process_index, chunk))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 567, in _run_iteration_and_process
+    output = _run_iteration(func, selected, cache)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 534, in _run_iteration
+    return _get_or_set_cache(func, selected, cache, compute_fn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 507, in _get_or_set_cache
+    return compute_fn()
+           ^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 530, in compute_fn
+    handle_error(e, func, selected)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 528, in compute_fn
+    return func(**selected)
+           ^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/_pipefunc.py", line 700, in __call__
+    result = self.func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/clean_repo/qec_simulations/qec/benchmark_performance.py", line 80, in mps_simulate
+    options = CirqSimulatorOptions(QCircuitSimulatorOptions(mps_max_bond_dimension = chi, mps_track_discarded_sv_norms=True, mps_lazy_indexing=lazy_indexing, use_gpu=use_gpu))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for QCircuitSimulatorOptions
+use_gpu
+  Extra inputs are not permitted [type=extra_forbidden, input_value=False, input_type=bool]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+Error occurred while executing function `mps_simulate(bb_code_parameter=(30, 8), constraints=<codes_constructions.circuit_models.SeqOperationConstraints object at 0x7f545f1e6ea0>, lazy_indexing=False, chi=2, num_repetitions=1, use_gpu=False)`.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive/runner.py", line 294, in _process_futures
+    y = fut.result()
+        ^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for QCircuitSimulatorOptions
+use_gpu
+  Extra inputs are not permitted [type=extra_forbidden, input_value=False, input_type=bool]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+Error occurred while executing function `mps_simulate(bb_code_parameter=(30, 8), constraints=<codes_constructions.circuit_models.SeqOperationConstraints object at 0x7f545f1e6ea0>, lazy_indexing=False, chi=2, num_repetitions=1, use_gpu=False)`.
+

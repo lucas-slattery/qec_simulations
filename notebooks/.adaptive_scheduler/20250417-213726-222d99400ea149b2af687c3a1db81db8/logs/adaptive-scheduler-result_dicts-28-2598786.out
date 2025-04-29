@@ -1,0 +1,3 @@
+/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/decomp.py:347: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
+  warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
+slurmstepd-obsidian-5: error: *** JOB 2598786 ON obsidian-5 CANCELLED AT 2025-04-17T21:40:17 ***

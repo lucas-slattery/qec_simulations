@@ -1,0 +1,285 @@
+/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/decomp.py:347: UserWarning: Got: Array must not contain infs or NaNs., falling back to scipy gesvd driver.
+  warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
+An error occurred while calling the function `mps_simulate` with the arguments `args=()` and `kwargs={'bb_code_parameter': (24, 4), 'constraints': <codes_constructions.circuit_models.SeqOperationConstraints object at 0x7130cd1a4200>, 'lazy_indexing': False, 'chi': 64, 'num_repetitions': 1}`.
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/decomp.py", line 343, in svd_truncated_numpy
+    return svd_truncated_numba(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/numba/np/linalg.py", line 841, in _check_finite_matrix
+    raise np.linalg.LinAlgError(
+numpy.linalg.LinAlgError: Array must not contain infs or NaNs.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/concurrent/futures/process.py", line 264, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/utils.py", line 1167, in __call__
+    return deserialized_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive/learner/sequence_learner.py", line 53, in __call__
+    return self.function(point, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/_executor.py", line 225, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 817, in _process_chunk
+    return list(map(process_index, chunk))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 567, in _run_iteration_and_process
+    output = _run_iteration(func, selected, cache)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 534, in _run_iteration
+    return _get_or_set_cache(func, selected, cache, compute_fn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 507, in _get_or_set_cache
+    return compute_fn()
+           ^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 530, in compute_fn
+    handle_error(e, func, selected)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 528, in compute_fn
+    return func(**selected)
+           ^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/_pipefunc.py", line 700, in __call__
+    result = self.func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/clean_repo/qec_simulations/qec/benchmark_performance.py", line 81, in mps_simulate
+    result = sim.simulate(cirq_circuit)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/sim/simulator.py", line 496, in simulate
+    return self.simulate_sweep(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/sim/simulator.py", line 511, in simulate_sweep
+    return list(self.simulate_sweep_iter(program, params, qubit_order, initial_state))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/sim/simulator_base.py", line 331, in simulate_sweep_iter
+    yield from super().simulate_sweep_iter(suffix, params, qubit_order, sim_state)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/sim/simulator.py", line 613, in simulate_sweep_iter
+    for step_result in all_step_results:
+                       ^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/sim/simulator_base.py", line 220, in _core_iterator
+    protocols.act_on(op, sim_state)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/protocols/act_on_protocol.py", line 153, in act_on
+    result = arg_fallback(action, qubits=qubits, allow_decompose=allow_decompose)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/clean_repo/system_performance/qcircuitsim/ionq/qcircuitsim/backends/quimb/quimb_mps_results.py", line 559, in _act_on_fallback_
+    return self._state.apply_op(action, self.get_axes(qubits), self.prng)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/clean_repo/system_performance/qcircuitsim/ionq/qcircuitsim/backends/quimb/quimb_mps_results.py", line 263, in apply_op
+    return self.apply_unitary(op, axes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/clean_repo/system_performance/qcircuitsim/ionq/qcircuitsim/backends/quimb/quimb_mps_results.py", line 297, in apply_unitary
+    self.apply_quimb_gate(gate, **gate_opts)
+  File "/home/lucas.slattery/clean_repo/system_performance/qcircuitsim/ionq/qcircuitsim/backends/quimb/quimb_mps_results.py", line 273, in apply_quimb_gate
+    self._circuit_mps.apply_gate(gate, **gate_opts)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/circuit.py", line 1976, in apply_gate
+    self._apply_gate(gate, **gate_opts)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/circuit.py", line 1918, in _apply_gate
+    self._psi.gate_(G, gate.qubits, tags=tags, **opts)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 652, in gate
+    return gate_TN_1D(self, *args, inplace=inplace, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 241, in gate_TN_1D
+    return tn.gate_with_auto_swap(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 379, in wrapped
+    return fn(self, *args, info=info, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 2104, in gate_with_auto_swap
+    mps.swap_site_to(
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 379, in wrapped
+    return fn(self, *args, info=info, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 2022, in swap_site_to
+    mps.swap_sites_with_compress(
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 379, in wrapped
+    return fn(self, *args, info=info, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 1954, in swap_sites_with_compress
+    sTi, sTj = Tij.split(lix, get="tensors", **compress_opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_core.py", line 2287, in split
+    return tensor_split(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/functools.py", line 912, in wrapper
+    return dispatch(args[0].__class__)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_core.py", line 588, in tensor_split
+    left, s, right = _SPLIT_FNS[method](array, **opts)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/autoray/autoray.py", line 925, in __call__
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/decomp.py", line 348, in svd_truncated_numpy
+    U, s, VH = scla.svd(x, full_matrices=False, lapack_driver="gesvd")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/scipy/linalg/_decomp_svd.py", line 106, in svd
+    a1 = _asarray_validated(a, check_finite=check_finite)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/scipy/_lib/_util.py", line 537, in _asarray_validated
+    a = toarray(a)
+        ^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/numpy/lib/function_base.py", line 630, in asarray_chkfinite
+    raise ValueError(
+ValueError: array must not contain infs or NaNs
+Error occurred while executing function `mps_simulate(bb_code_parameter=(24, 4), constraints=<codes_constructions.circuit_models.SeqOperationConstraints object at 0x7130cd1a4200>, lazy_indexing=False, chi=64, num_repetitions=1)`.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive/runner.py", line 294, in _process_futures
+    y = fut.result()
+        ^^^^^^^^^^^^
+ValueError: array must not contain infs or NaNs
+Error occurred while executing function `mps_simulate(bb_code_parameter=(24, 4), constraints=<codes_constructions.circuit_models.SeqOperationConstraints object at 0x7130cd1a4200>, lazy_indexing=False, chi=64, num_repetitions=1)`.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/_server_support/launcher.py", line 185, in <module>
+    main()
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/_server_support/launcher.py", line 169, in main
+    runner.ioloop.run_until_complete(runner.task)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+RuntimeError: An error occured while evaluating "learner.function((0, ((202,),)))". See the traceback for details.:
+
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/decomp.py", line 343, in svd_truncated_numpy
+    return svd_truncated_numba(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/numba/np/linalg.py", line 841, in _check_finite_matrix
+    raise np.linalg.LinAlgError(
+numpy.linalg.LinAlgError: Array must not contain infs or NaNs.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/concurrent/futures/process.py", line 264, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/utils.py", line 1167, in __call__
+    return deserialized_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive/learner/sequence_learner.py", line 53, in __call__
+    return self.function(point, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/_executor.py", line 225, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 817, in _process_chunk
+    return list(map(process_index, chunk))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 567, in _run_iteration_and_process
+    output = _run_iteration(func, selected, cache)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 534, in _run_iteration
+    return _get_or_set_cache(func, selected, cache, compute_fn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 507, in _get_or_set_cache
+    return compute_fn()
+           ^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 530, in compute_fn
+    handle_error(e, func, selected)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/map/_run.py", line 528, in compute_fn
+    return func(**selected)
+           ^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/pipefunc/_pipefunc.py", line 700, in __call__
+    result = self.func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/clean_repo/qec_simulations/qec/benchmark_performance.py", line 81, in mps_simulate
+    result = sim.simulate(cirq_circuit)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/sim/simulator.py", line 496, in simulate
+    return self.simulate_sweep(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/sim/simulator.py", line 511, in simulate_sweep
+    return list(self.simulate_sweep_iter(program, params, qubit_order, initial_state))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/sim/simulator_base.py", line 331, in simulate_sweep_iter
+    yield from super().simulate_sweep_iter(suffix, params, qubit_order, sim_state)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/sim/simulator.py", line 613, in simulate_sweep_iter
+    for step_result in all_step_results:
+                       ^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/sim/simulator_base.py", line 220, in _core_iterator
+    protocols.act_on(op, sim_state)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/cirq/protocols/act_on_protocol.py", line 153, in act_on
+    result = arg_fallback(action, qubits=qubits, allow_decompose=allow_decompose)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/clean_repo/system_performance/qcircuitsim/ionq/qcircuitsim/backends/quimb/quimb_mps_results.py", line 559, in _act_on_fallback_
+    return self._state.apply_op(action, self.get_axes(qubits), self.prng)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/clean_repo/system_performance/qcircuitsim/ionq/qcircuitsim/backends/quimb/quimb_mps_results.py", line 263, in apply_op
+    return self.apply_unitary(op, axes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/clean_repo/system_performance/qcircuitsim/ionq/qcircuitsim/backends/quimb/quimb_mps_results.py", line 297, in apply_unitary
+    self.apply_quimb_gate(gate, **gate_opts)
+  File "/home/lucas.slattery/clean_repo/system_performance/qcircuitsim/ionq/qcircuitsim/backends/quimb/quimb_mps_results.py", line 273, in apply_quimb_gate
+    self._circuit_mps.apply_gate(gate, **gate_opts)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/circuit.py", line 1976, in apply_gate
+    self._apply_gate(gate, **gate_opts)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/circuit.py", line 1918, in _apply_gate
+    self._psi.gate_(G, gate.qubits, tags=tags, **opts)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 652, in gate
+    return gate_TN_1D(self, *args, inplace=inplace, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 241, in gate_TN_1D
+    return tn.gate_with_auto_swap(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 379, in wrapped
+    return fn(self, *args, info=info, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 2104, in gate_with_auto_swap
+    mps.swap_site_to(
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 379, in wrapped
+    return fn(self, *args, info=info, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 2022, in swap_site_to
+    mps.swap_sites_with_compress(
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 379, in wrapped
+    return fn(self, *args, info=info, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_1d.py", line 1954, in swap_sites_with_compress
+    sTi, sTj = Tij.split(lix, get="tensors", **compress_opts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_core.py", line 2287, in split
+    return tensor_split(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/functools.py", line 912, in wrapper
+    return dispatch(args[0].__class__)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/tensor_core.py", line 588, in tensor_split
+    left, s, right = _SPLIT_FNS[method](array, **opts)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/autoray/autoray.py", line 925, in __call__
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/decomp.py", line 348, in svd_truncated_numpy
+    U, s, VH = scla.svd(x, full_matrices=False, lapack_driver="gesvd")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/scipy/linalg/_decomp_svd.py", line 106, in svd
+    a1 = _asarray_validated(a, check_finite=check_finite)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/scipy/_lib/_util.py", line 537, in _asarray_validated
+    a = toarray(a)
+        ^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/numpy/lib/function_base.py", line 630, in asarray_chkfinite
+    raise ValueError(
+ValueError: array must not contain infs or NaNs
+Error occurred while executing function `mps_simulate(bb_code_parameter=(24, 4), constraints=<codes_constructions.circuit_models.SeqOperationConstraints object at 0x7130cd1a4200>, lazy_indexing=False, chi=64, num_repetitions=1)`.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive/runner.py", line 294, in _process_futures
+    y = fut.result()
+        ^^^^^^^^^^^^
+ValueError: array must not contain infs or NaNs
+Error occurred while executing function `mps_simulate(bb_code_parameter=(24, 4), constraints=<codes_constructions.circuit_models.SeqOperationConstraints object at 0x7130cd1a4200>, lazy_indexing=False, chi=64, num_repetitions=1)`.
+

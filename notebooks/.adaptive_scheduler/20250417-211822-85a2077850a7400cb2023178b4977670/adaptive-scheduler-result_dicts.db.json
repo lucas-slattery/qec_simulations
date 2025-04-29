@@ -1,0 +1,214 @@
+{
+    "data": [
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-0-2013b8b819904b25992803afbe24e5a5.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-7",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-1-e566a621154e4380bb764af1e79c5907.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-6",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-2-ae5876898fb048798fc082cd99e76d6a.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-10",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-3-204fe4de7ff34128a1d483c9b6d66295.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-2",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-4-f6207a4e9ef6495689c34ccd3cc5068a.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-11",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-5-a441351f9c774b6caa655885957e7fb2.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-0",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-6-61963f74c51e4f81abc6a0fcbaa8d052.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-4",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-7-00a4c648eaaf43a4801f7ac6f9efc36c.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-14",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-8-9bb884a637594ba19ef4da61e2b891e7.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-9",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-9-516fdfd278cf4eb695a3d9f95084d762.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-3",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-10-598035f6484b4c4593c83a29a193c5e8.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-8",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-11-e22bd2aff8164dffb52e524671826fc6.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-13",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-12-1989fffc4bc04c40a51c51a94e5f7765.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-5",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-13-f46270d6e47147d2af0c4d7b7232f2f1.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-15",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-14-d6ea76f0a91745ce84063ae03ef1aca8.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-16",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-15-284d9cf3a6fa4b5d9257098a0bdb5d20.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-18",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-16-0b5b2802ee014f30b954b32f5c34a4db.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-1",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-17-2717ed99c7b14911bc8ac829f2712fc4.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-17",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-211822-85a2077850a7400cb2023178b4977670/func-18-67e7e084477d40dda5b09008abf77673.pickle",
+            "job_id": null,
+            "is_pending": true,
+            "is_done": false,
+            "log_fname": null,
+            "job_name": "adaptive-scheduler-result_dicts-12",
+            "output_logs": [],
+            "start_time": null,
+            "depends_on": []
+        }
+    ],
+    "meta": {}
+}

@@ -1,0 +1,25 @@
+/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/decomp.py:347: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
+  warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
+/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/quimb/tensor/decomp.py:347: UserWarning: Got: Array must not contain infs or NaNs., falling back to scipy gesvd driver.
+  warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
+Simulation failed
+Traceback (most recent call last):
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/_server_support/launcher.py", line 185, in <module>
+    main()
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/_server_support/launcher.py", line 181, in main
+    client_support.tell_done(args.url, fname)
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/adaptive_scheduler/client_support.py", line 145, in tell_done
+    socket.recv_serialized(_deserialize)  # Needed because of socket type
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/zmq/sugar/socket.py", line 889, in recv_serialized
+    frames = self.recv_multipart(flags=flags, copy=copy)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lucas.slattery/micromamba/envs/system_performance/lib/python3.12/site-packages/zmq/sugar/socket.py", line 811, in recv_multipart
+    parts = [self.recv(flags, copy=copy, track=track)]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "_zmq.py", line 1156, in zmq.backend.cython._zmq.Socket.recv
+  File "_zmq.py", line 1191, in zmq.backend.cython._zmq.Socket.recv
+  File "_zmq.py", line 1283, in zmq.backend.cython._zmq._recv_copy
+  File "_zmq.py", line 1278, in zmq.backend.cython._zmq._recv_copy
+  File "_zmq.py", line 171, in zmq.backend.cython._zmq._check_rc
+zmq.error.Again: Resource temporarily unavailable

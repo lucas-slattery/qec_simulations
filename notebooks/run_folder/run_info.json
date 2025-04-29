@@ -1,0 +1,84 @@
+{
+    "all_output_names": [
+        "collated_results",
+        "end",
+        "result_dicts"
+    ],
+    "shapes": {
+        "chi": [
+            9
+        ],
+        "bb_code_parameter": [
+            4
+        ],
+        "lazy_indexing": [
+            2
+        ],
+        "constraints": [
+            4
+        ],
+        "result_dicts": [
+            4,
+            4,
+            2,
+            9
+        ]
+    },
+    "resolved_shapes": {
+        "chi": [
+            9
+        ],
+        "bb_code_parameter": [
+            4
+        ],
+        "lazy_indexing": [
+            2
+        ],
+        "constraints": [
+            4
+        ],
+        "result_dicts": [
+            4,
+            4,
+            2,
+            9
+        ]
+    },
+    "internal_shapes": null,
+    "shape_masks": {
+        "chi": [
+            true
+        ],
+        "bb_code_parameter": [
+            true
+        ],
+        "lazy_indexing": [
+            true
+        ],
+        "constraints": [
+            true
+        ],
+        "result_dicts": [
+            true,
+            true,
+            true,
+            true
+        ]
+    },
+    "run_folder": "run_folder",
+    "mapspecs_as_strings": [
+        "bb_code_parameter[i], constraints[j], lazy_indexing[k], chi[l] -> result_dicts[i, j, k, l]"
+    ],
+    "storage": "file_array",
+    "pipefunc_version": "0.59.1",
+    "input_paths": {
+        "bb_code_parameter": "run_folder/inputs/bb_code_parameter.cloudpickle",
+        "constraints": "run_folder/inputs/constraints.cloudpickle",
+        "lazy_indexing": "run_folder/inputs/lazy_indexing.cloudpickle",
+        "chi": "run_folder/inputs/chi.cloudpickle",
+        "num_repetitions": "run_folder/inputs/num_repetitions.cloudpickle",
+        "collated_result_filepath": "run_folder/inputs/collated_result_filepath.cloudpickle",
+        "use_gpu": "run_folder/inputs/use_gpu.cloudpickle"
+    },
+    "defaults_path": "run_folder/defaults/defaults.cloudpickle"
+}

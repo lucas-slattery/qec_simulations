@@ -1,0 +1,3 @@
+/home/lucas.slattery/clean_repo/system_performance/qcircuitsim/ionq/qcircuitsim/backends/quimb/quimb_mps_results.py:386: ComplexWarning: Casting complex values to real discards the imaginary part
+  [max(0, float(d_sv / norm)) for d_sv, norm in zip(discarded_sv_norms, norms, strict=False)]
+slurmstepd-obsidian-3: error: *** JOB 2589952 ON obsidian-3 CANCELLED AT 2025-04-15T21:26:15 ***

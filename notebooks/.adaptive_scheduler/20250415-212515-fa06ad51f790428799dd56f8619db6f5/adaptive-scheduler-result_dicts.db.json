@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250415-212515-fa06ad51f790428799dd56f8619db6f5/func-0-0078bd2c3c7041648ef3652a7d21d713.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": false,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250415-212515-fa06ad51f790428799dd56f8619db6f5/logs/adaptive-scheduler-result_dicts-0-2589952.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250415-212515-fa06ad51f790428799dd56f8619db6f5/logs/adaptive-scheduler-result_dicts-0-2589952.out"
+            ],
+            "start_time": "2025-04-15T21:25:35.137890+00:00",
+            "depends_on": []
+        }
+    ],
+    "meta": {}
+}

@@ -1,0 +1,161 @@
+{
+    "data": [
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-0-7061c3cc8568451f8a5d78d238325038.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-5-2593601.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-5-2593601.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.533416+00:00",
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-1-4d358c09d4ba456998144d74f69fa273.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-6-2593602.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-6-2593602.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.547943+00:00",
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-2-b842a407b22f4d28be593a01a32fcfdf.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-8-2593603.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-8-2593603.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.542526+00:00",
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-3-7b8ee640ac0446bdb5d5a0878c3843de.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-7-2593604.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-7-2593604.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.526695+00:00",
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-4-1b6507df77794adeb9ee73b6f94995fa.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-10-2593605.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-10-2593605.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.537325+00:00",
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-5-4ca098f1314a46c9b33f7143100d8253.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-11-2593606.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-11-2593606.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.535284+00:00",
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-6-fb6bad2071324f03b3bf148c8ab5fbbd.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-1-2593607.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-1-2593607.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.545995+00:00",
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-7-1ef86c212b0c445588d0a79e260e4d99.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-9-2593608.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-9-2593608.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.529274+00:00",
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-8-06ec33adbd284347a1b611a732aabdae.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-2-2593609.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-2-2593609.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.540709+00:00",
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-9-7dab0d23535c4c87b0e7de9da04ba62a.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-4-2593610.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-4-2593610.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.539020+00:00",
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-10-7dff56e716b34112801d03c569f03fd5.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-0-2593611.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-0-2593611.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.544153+00:00",
+            "depends_on": []
+        },
+        {
+            "fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/func-11-638304fb234b431bbd73adb136046658.pickle",
+            "job_id": null,
+            "is_pending": false,
+            "is_done": true,
+            "log_fname": "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-3-2593612.log",
+            "job_name": null,
+            "output_logs": [
+                "/home/lucas.slattery/clean_repo/qec_simulations/notebooks/.adaptive_scheduler/20250417-184039-52b5bfce44b844d2aaf697132a1e2c78/logs/adaptive-scheduler-result_dicts-3-2593612.out"
+            ],
+            "start_time": "2025-04-17T18:41:13.531397+00:00",
+            "depends_on": []
+        }
+    ],
+    "meta": {}
+}

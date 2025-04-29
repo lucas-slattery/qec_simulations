@@ -1,0 +1,58 @@
+{
+    "all_output_names": [
+        "collated_results",
+        "end",
+        "result_dicts"
+    ],
+    "shapes": {
+        "bb_code_parameter": [
+            2
+        ],
+        "constraints": [
+            4
+        ],
+        "result_dicts": [
+            2,
+            4
+        ]
+    },
+    "resolved_shapes": {
+        "bb_code_parameter": [
+            2
+        ],
+        "constraints": [
+            4
+        ],
+        "result_dicts": [
+            2,
+            4
+        ]
+    },
+    "internal_shapes": null,
+    "shape_masks": {
+        "bb_code_parameter": [
+            true
+        ],
+        "constraints": [
+            true
+        ],
+        "result_dicts": [
+            true,
+            true
+        ]
+    },
+    "run_folder": "run_folder2",
+    "mapspecs_as_strings": [
+        "bb_code_parameter[i], constraints[j] -> result_dicts[i, j]"
+    ],
+    "storage": "file_array",
+    "pipefunc_version": "0.59.1",
+    "input_paths": {
+        "bb_code_parameter": "run_folder2/inputs/bb_code_parameter.cloudpickle",
+        "constraints": "run_folder2/inputs/constraints.cloudpickle",
+        "num_repetitions": "run_folder2/inputs/num_repetitions.cloudpickle",
+        "collated_result_filepath": "run_folder2/inputs/collated_result_filepath.cloudpickle",
+        "use_gpu": "run_folder2/inputs/use_gpu.cloudpickle"
+    },
+    "defaults_path": "run_folder2/defaults/defaults.cloudpickle"
+}

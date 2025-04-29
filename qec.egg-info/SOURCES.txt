@@ -1,0 +1,8 @@
+setup.py
+qec/__init__.py
+qec/benchmark_performance.py
+qec.egg-info/PKG-INFO
+qec.egg-info/SOURCES.txt
+qec.egg-info/dependency_links.txt
+qec.egg-info/requires.txt
+qec.egg-info/top_level.txt
